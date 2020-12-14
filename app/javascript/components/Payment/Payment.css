@@ -1,0 +1,49 @@
+.payment-page{
+    background-color: #101522;
+    height: 90vh;
+    padding: 50px;
+    display: flex;
+}
+.payment-left{
+    width: 60%;
+    background-color: white;
+    padding: 4%;
+}
+.payment-right{
+    width: 35%;
+    margin-left: 3%;
+    background-color: white;
+    padding: 4%;
+}
+.charge-content{
+    display: flex;
+    justify-content: space-between;
+}
+.charge-total{
+    float: right;
+    margin-bottom: 30px;
+}
+.checkout{
+    margin: 20px 0;
+}
+.alert-message{
+    margin-top: 20px;
+}
+@media screen and (max-width:767px) {
+    .payment-page{
+        height: auto;
+        display: block;
+        padding: 15px;
+    }
+    .payment-left{
+        width: 94%;
+        margin: 0 auto;
+    }
+    .payment-left > h1 {
+        font-size: 25px;
+    }
+    .payment-right{
+        width: 94%;
+        margin: 30px auto;
+    }
+}

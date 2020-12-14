@@ -1,0 +1,26 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: 'hondaao'
+      POSTGRES_PASSWORD: 'aosora1207'
+    restart: always
+  app:
+    build: .
+    image: rails
+    container_name: 'app'
+    command: rails s -p 3000 -b '0.0.0.0'
+    ports:
+      - "3000:3000"
+    environment:
+      VIRTUAL_PORT: 3000
+    volumes:
+      - ./:/app/src
+    depends_on:
+      - postgres
+    restart: always

@@ -1,0 +1,51 @@
+.auth-card{
+    width: 70%;
+    margin: 10% auto;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 0px 0px 0px 1px rgba(10,10,10,0.02);
+    display: flex;
+}
+.auth-card-left{
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+}
+.auth-card-left > p {
+   font-weight: 200;
+   color: lightgrey;
+   margin: 20px 0;
+}
+.field{
+    margin: 15px 0;
+}
+.input-field {
+    width: 93%;
+    border: 1px solid lightgrey;
+    padding: 12px;
+}
+.btn-field{
+    display: flex;
+    text-align: left;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 140px;
+}
+.btn-field > span {
+    margin-left: 20px;
+    color: lightgrey;
+}
+.btn-submit-auth{
+    background-color: #13aa52;
+    color: white;
+    border-radius: 40px;
+    height: 50px;
+    width: 40%;
+    border: none;
+    padding: 12px;
+}
+.auth-card-right{
+    width: 50%;
+}
+.auth-card-right > img{
+    width: 100%;
+    height: auto;
+}

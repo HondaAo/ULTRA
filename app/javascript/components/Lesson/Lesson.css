@@ -1,0 +1,122 @@
+.lesson-list{
+    background-color: #FFF;
+    height: 100vh;
+    padding-top: 20px;
+    text-align: center;
+}
+.lesson-list > p {
+    color: lightgray;
+}
+.lesson-list-header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.lessons-search{
+    margin-top: 15px;
+}
+.lessons-search-input {
+    height: 41px;
+    border-radius: 5px;
+    padding-left: 17px;
+    width: 200px;
+    border:1px solid lightgray;
+    background-color: white;
+}
+.lessons-search-button{
+    margin-top: 3px;
+    padding: 9px 18px 10px 18px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    border: lightgray;
+    font-weight: 200;
+    margin-left: 0px;
+}
+.lesson-cards{
+    width: 85%;
+    margin: 70px auto;
+    display: flex;
+}
+.lesson-card{
+    width: 30%;
+    margin: 2.5%;
+    text-decoration: none;
+    color: black;
+}
+.lesson-card:hover{
+    border-color: tomato;
+}
+.lesson-card > img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.lesson-card-content{
+    margin-top: -25px;
+    padding: 3%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid lightgray;
+}
+.lesson-card-content > p {
+    color: lightgray;
+}
+input:focus {
+    border: none;
+}
+.content-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: -10px;
+}
+.message{
+    text-align: left;
+    width: 80%;
+    margin: 15px auto;
+}
+.create-lesson{
+    padding: 5%;
+}
+.create_lesson{
+    width: 60%;
+    margin: 60px auto;
+}
+.input-field{
+    width: 100%;
+    padding-left: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:767px) {
+    .lesson-list{
+        height: auto;
+    }
+    .lesson-list-header{
+        display: block;
+        width: 94%;
+        margin: 0 auto;
+    }
+    .lesson-cards{
+        width: 94%;
+        margin: 40px auto;
+        display: block;
+    }
+    .lesson-card{
+        width: 100%;
+        margin: 0;
+    }
+    .lesson-card-content{
+        margin-bottom: 25px;
+        margin-top: -10px;
+        padding: 3%;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 1px solid lightgray;
+    }
+}
