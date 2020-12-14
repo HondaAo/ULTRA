@@ -7,8 +7,8 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: 'hondaao'
-      POSTGRES_PASSWORD: 'aosora1207'
+      POSTGRES_USER: ''
+      POSTGRES_PASSWORD: ''
     restart: always
   app:
     build: .
