@@ -49,3 +49,27 @@
     width: 100%;
     height: auto;
 }
+@media screen and (max-width:767px) {
+    .auth-card{
+        width: 95%;
+        margin: 10% auto;
+        box-shadow: none;
+    }
+    .auth-card-left{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .btn-field{
+        display: block;
+    }
+    .btn-submit-auth{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .input-field{
+        width: 80%;
+        padding: 0%;
+        height: 35px;
+        padding-left: 10px;
+    }
+}

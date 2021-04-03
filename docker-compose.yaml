@@ -7,8 +7,8 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: ''
-      POSTGRES_PASSWORD: ''
+      POSTGRES_USER: hondaao
+      POSTGRES_PASSWORD: aosora1207
     restart: always
   app:
     build: .
@@ -18,9 +18,30 @@ services:
     ports:
       - "3000:3000"
     environment:
-      VIRTUAL_PORT: 3000
+      RAILS_ENV: development
+      NODE_ENV: development
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
+      DATABASE_USER: hondaao
+      DATABASE_PASSWORD: aosora1207
+      WEBPACKER_DEV_SERVER_HOST: webpacker
     volumes:
       - ./:/app/src
     depends_on:
       - postgres
+      - webpacker
     restart: always
+  webpacker:
+    build: .
+    command: ./bin/webpack-dev-server
+    volumes:
+      - .:/app:cached
+      - node_modules:/app/node_modules:cached
+    environment:
+      RAILS_ENV: development
+      NODE_ENV: development
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    tty: false
+    stdin_open: false
+    ports:
+      - "3035:3035"

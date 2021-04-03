@@ -6,8 +6,6 @@ import { FaRocket } from 'react-icons/fa'
 import { useContext, useEffect } from 'react'
 import { AuthContext } from '../auth/Context'
 import MediaQuery from 'react-responsive'
-import { Membership } from '../Home/Membership'
-
 interface HeaderProps {
   
 }
@@ -34,9 +32,6 @@ export const Header: React.FC<HeaderProps> = ({}) =>{
                        <li>{ !userInfo ? <Link to="/register" className="nav-menu-blue">SIGN UP</Link>: <Link to="/dashboard" className="nav-menu-blue">DashBoard</Link>}</li>
                    </ul>
                 </div>
-                </MediaQuery>
-                <MediaQuery query="{max-width: 767px}">
-
                 </MediaQuery>
                 </div>
                

@@ -1,12 +1,12 @@
 import * as React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import image from "../images/image.svg";
 interface TopProps {
 
 }
 
 export const Top: React.FC<TopProps> = ({}) =>{
-    const image = require('../images/image.svg')
         return (
             <div className="info-section">
              <div className="info-top">

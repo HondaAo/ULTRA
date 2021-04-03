@@ -1,5 +1,4 @@
 import * as React from 'react' 
-
 interface IntroProps {
 
 }
@@ -17,8 +16,8 @@ export const Intro: React.FC<IntroProps> = ({}) =>{
                      Hi! Everyone!
                      Please check my introduction page and portfolio.
                     </h1>
-                    <p>I have been full stack engineer below, you can contact<br /> and watch my experience.</p>
-                    <button className="home-btn">LEARN MORE</button>
+                    <p style={{ marginBottom: '20px'}}>I have been full stack engineer below, you can contact<br /> and watch my experience.</p>
+                    <a href="https://www.resume.id/honda_ao" className="home-btn">LEARN MORE</a>
                 </div>
                 </div>
             </div>

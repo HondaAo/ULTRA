@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { AuthContext } from '../auth/Context';
 import * as H from 'history'
 import { RouteComponentProps } from 'react-router-dom'
-
+import MediaQuery from 'react-responsive'
 interface Login extends RouteComponentProps<{}> {
     history: H.History,
     Login: () => void
@@ -58,9 +58,11 @@ export const Login: React.FC<Login> = ({ history }) =>{
                         </form>
                         <p>© 2020 ULTRA, Inc. All rights reserved</p>
                     </div>
+                    <MediaQuery query="(min-width: 767px)">
                     <div className="auth-card-right">
                      <img src="https://images.pexels.com/photos/3414792/pexels-photo-3414792.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
                     </div>
+                    </MediaQuery>
                 </div>
             </div>
 

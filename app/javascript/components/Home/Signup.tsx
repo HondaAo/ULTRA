@@ -1,11 +1,11 @@
 import * as React from 'react' 
-
-interface SignupProps {
-
+import * as image from "../images/chat.svg";
+import {Link} from 'react-router-dom'
+interface Signup {
+    
 }
 
-export const Signup: React.FC<SignupProps> = ({}) =>{
-    const image = require('../images/chat.svg')
+export const Signup: React.FC<Signup> = ({}) =>{
         return (
             <div className="signup">
                 <div className="signup-content">
@@ -14,11 +14,11 @@ export const Signup: React.FC<SignupProps> = ({}) =>{
                     </div>
                     <div className="signup-content-right">
                         <p>Free trial</p>
-                        <h1>You can apply a week free trial now</h1>
-                        <p>We will provide a week free trial, you can choose any course for free.<br/>
+                        <h1>You can get a lot of free course now</h1>
+                        <p style={{ marginBottom: '35px'}}>We will provide a lot of free lesson, you can choose any course for free.<br/>
                            Of course, you can chat with instructor in this period. Let's try it.
                         </p>
-                        <button className="home-btn">Signup now</button>
+                        <Link to="/register" className="home-btn" >Signup now</Link>
                     </div>
                 </div>
             </div>
